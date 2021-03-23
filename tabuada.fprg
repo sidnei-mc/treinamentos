@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Sidnei MC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-23 08:37:42 "/>
+        <attribute name="created" value="U2lkbmVpIE1DO1NJRE5FSU1DLVBDOzIwMjEtMDMtMjM7IjA4OjA1OjI3ICI7Mjc1MA=="/>
+        <attribute name="edited" value="U2lkbmVpIE1DO1NJRE5FSU1DLVBDOzIwMjEtMDMtMjM7IjA4OjM3OjQyICI7NDsyODYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite, contador, base" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <assign variable="contador" expression="0"/>
+            <input variable="base"/>
+            <assign variable="limite" expression="base*10"/>
+            <while expression="numero&lt;limite">
+                <assign variable="numero" expression="contador*base"/>
+                <output expression="base &amp;&quot;X&quot; &amp;contador &amp;&quot;=&quot; &amp;numero" newline="True"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+            <output expression="&quot;Fim da tabuada do&quot; &amp;base" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
